@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HiveLoader - Node extension for KNIME Workbench
+Bundle-SymbolicName: jp.co.recruit.hadoop.knime.loader;singleton:=true
+Bundle-Version: 0.1.5
+Bundle-ClassPath: filetransferclient.jar,
+ lib/commons-io-2.0.1.jar,
+ lib/commons-vfs-1.0.jar,
+ lib/jsch-0.1.44.jar,
+ lib/commons-logging-1.1.1.jar
+Bundle-Activator: jp.co.recruit.hadoop.knime.loader.FileTransferClientNodePlugin
+Bundle-Vendor: Takeshi NAKANO
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base
+Bundle-ActivationPolicy: lazy
+Export-Package: jp.co.recruit.hadoop.knime.loader;
+  uses:="org.eclipse.core.runtime,
+   org.knime.core.node,
+   org.knime.core.node.port.database,
+   javax.swing,
+   org.knime.base.node.io.database,
+   org.knime.core.data,
+   org.osgi.framework"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
